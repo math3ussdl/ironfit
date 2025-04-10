@@ -1,0 +1,470 @@
+:root {
+  --primary-color: #d90429;
+  --secondary-color: #2b2d42;
+  --background-color: #edf2f4;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+.header {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.navigation .nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation .nav-link {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #b90322;
+}
+
+.hero-extra-info {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.about-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.about-description {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.advantages {
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.advantages-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.advantage-item {
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.advantage-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.advantage-description {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+.plans {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.plans-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.plans-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan-item {
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.plan-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+}
+
+.plan-features li {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.plan-features i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.plan-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+  background-color: #b90322;
+}
+
+.contact {
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.contact-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.contact-description {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.contact-button:hover {
+  background-color: #b90322;
+}
+
+.contact-info {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-social a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--primary-color);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation .nav-list {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
